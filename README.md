@@ -1,0 +1,2 @@
+# MRDIFF
+MRDIFF returns the difference between two radiological images of the same subject, separated by time. It makes it easy to see degenerative or restorative changes. MRDIFF is a SaaS product charged on a Cloud Model. It is wholly owned by Milton Health LLC. 

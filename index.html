@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLB Viewer</title>
+    <style>
+        body { margin: 0; }
+        canvas { display: block; }
+        #controls {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 10;
+        }
+        .slider-container {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="controls">
+        <div class="slider-container">
+            <label for="brightness">Brightness: </label>
+            <input type="range" id="brightness" min="0" max="2" step="0.01" value="1">
+        </div>
+        <div class="slider-container">
+            <label for="contrast">Contrast: </label>
+            <input type="range" id="contrast" min="0" max="2" step="0.01" value="1">
+        </div>
+        <div class="slider-container">
+            <label for="scaleX">Scale X: </label>
+            <input type="range" id="scaleX" min="0.1" max="60" step="0.01" value="1">
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
